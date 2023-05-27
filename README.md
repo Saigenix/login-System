@@ -26,7 +26,7 @@ To use EasyAuth in your application, follow these steps:
 1. Install the required dependencies by running the following command:
 
    ```shell
-   npm install ```
+   Coming Soon ```
    
   For detailed usage instructions and examples, please refer to the documentation included in this repository.
   
