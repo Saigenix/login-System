@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Login System 
 ---
 > 🎛️ create **Email/Google** SignUp In *seconds*
@@ -80,5 +80,5 @@ This project utilizes the following open-source libraries and frameworks:
 * Express
 * Passport
 * Prisma
->>>>>>> a4f6c36c4ab2468de97c3bd7ba4540707e0c220a
+
 
