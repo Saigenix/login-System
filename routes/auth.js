@@ -7,7 +7,7 @@ router.post('/', user.register);
 router.post('/login', user.login);
 // all users
 router.get('/all', auth, user.all);
-//
+// get method
 router.get("/",(req,res)=>{
     res.send("use post for signup/login");
 })

@@ -1,10 +1,11 @@
 const router = require('express').Router();
 const createError = require('http-errors')
 var passport = require('passport');
+const jwt = require("../utils/jwt");
 require("dotenv").config();
 
 
-const checkuser=async(req,res,next)=>{
+const checkUser = async(req,res,next)=>{
     // send token in authorization
     if (!req.headers.authorization) {
         return next(createError.Unauthorized('User is Not logged in to log out'))
@@ -24,7 +25,7 @@ const checkuser=async(req,res,next)=>{
     
 
 
-router.get('/',checkuser,(req,res)=>{
+router.get('/',checkUser,(req,res)=>{
     res.json({
         data:"if you logged in with email then handel in frontend"
     })

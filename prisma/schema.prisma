@@ -11,25 +11,24 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model post {
-  id        String   @id @default(uuid())
-  title     String
-  slug      String   @unique
-  likeCount Int      @default(0)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  content   String?
-  published Boolean  @default(false)
-  author    user     @relation(fields: [authorId], references: [id])
-  authorId  String
-}
+// model post {
+//   id        String   @id @default(uuid())
+//   title     String
+//   slug      String   @unique
+//   likeCount Int      @default(0)
+//   createdAt DateTime @default(now())
+//   updatedAt DateTime @updatedAt
+//   content   String?
+//   published Boolean  @default(false)
+//   author    user     @relation(fields: [authorId], references: [id])
+//   authorId  String
+// }
 
 model user {
   id    String  @id @default(uuid())
   email String  @unique
   username  String @unique
   name String?
-  posts post[]
   bio   String?
   password String?
 }

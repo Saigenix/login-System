@@ -14,7 +14,7 @@ class authController {
                 data: user
             })
         }
-        catch (e) {
+        catch (e) { 
             next(createError(e.statusCode,`${e} invalid`))
             console.log(e)
         }

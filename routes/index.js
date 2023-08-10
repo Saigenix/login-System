@@ -17,7 +17,9 @@ const createError = require('http-errors')
 router.use('/auth', auth);
 router.use('/google',google);
 router.use('/profile',profile);
-router.use('/logout',logout)
+router.use('/logout',logout);
+
+
 router.get('/',authCheck, (req,res)=>{
     res.json({
         "msg":"your logged in to logout use /logout",
@@ -33,7 +35,7 @@ router.use( async (req, res, next) => {
 // in this function err is came from above next 
 router.use( (err, req, res, next) => {
     res.status(err.status || 500).json({
-        status: false,
+        status: false, 
         message: err.message
     })
 })
