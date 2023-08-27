@@ -10,19 +10,6 @@ const session = require('express-session');
 // using Static Route to show the public files /static
 app.use("/static", express.static("public"));
 
-// const config = {
-//   authRequired: false,
-//   auth0Logout: true,
-//   secret: process.env.AUTH_KEY,
-//   baseURL: 'http://localhost:3000',
-//   clientID: '1IYPqKxpV7viUgah8i4aV5leKyUhCVNp',
-//   issuerBaseURL: 'https://dev-hrajmzc4mgwlczyo.us.auth0.com'
-// };
-
-//app.use(auth(config));
-// app.get("/", (req, res) => {
-//   res.send("Welcome to blog api");
-// });
 
 
 // parse application/x-www-form-urlencoded
